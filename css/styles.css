@@ -24,6 +24,7 @@ h5,
 h6,
 p {
     margin-top: 0;
+    padding-top: 0;
 }
 
 img{
@@ -131,8 +132,8 @@ img{
 }
 
 .hero-title{
-    margin-top: 0;
-    margin-bottom: 30px;
+    max-width: 696px;
+    margin: 0 auto 30px;
     color:var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -264,7 +265,6 @@ img{
 
 .benefits-list .item{
     width: 270px;
-    margin-bottom: 0;
     margin-right: 30px;
 }
 
@@ -272,7 +272,6 @@ img{
     margin-right: 0;
 }
 .title-description{
-    margin-top: 0;
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
@@ -285,8 +284,6 @@ img{
 }
 
 .work-list .item{
-    margin-top: 0;
-    margin-bottom: 0;
     margin-right: 30px;
    
 }
@@ -296,7 +293,6 @@ img{
 }
 
 .title-benefits{
-    margin-top: 0;
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
@@ -311,7 +307,6 @@ img{
     letter-spacing: 0.06em;
 }
 .description-benefits{
-    margin-top: 0;
     margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
@@ -347,7 +342,6 @@ img{
 }
 
 .team-list .item {
-    margin-top: 0;
     margin-bottom: 0;
     margin-right: 30px;
 }
