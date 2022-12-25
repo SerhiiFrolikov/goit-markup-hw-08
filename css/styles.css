@@ -682,7 +682,7 @@ img {
 
 .submit {
 	cursor: pointer;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
@@ -781,7 +781,6 @@ img {
 .form-title {
 	text-align: center;
 	margin-bottom: 12px;
-	font-style: Bold;
 	font-size: 20px;
 	line-height: 1.15;
 	letter-spacing: 0.03em;
