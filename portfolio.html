@@ -22,14 +22,14 @@
 					<span class="logo__part-web">Web</span>Studio
 				</a>
 				<nav>
-					<ul class="list header__list">
-						<li class="header__item"><a href="./index.html" class="link header__link">Студія</a></li>
-						<li class="header__item"><a href="./portfolio.html" class="link header__link header__link--current">Портфоліо</a></li>
-						<li class="header__item"><a href="#" class="link header__link">Контакти</a></li>
+					<ul class="list header__nav-list">
+						<li class="header__nav-item"><a href="./index.html" class="link header__link">Студія</a></li>
+						<li class="header__nav-item"><a href="./portfolio.html" class="link header__link header__link--current">Портфоліо</a></li>
+						<li class="header__nav-item"><a href="#" class="link header__link">Контакти</a></li>
 					</ul>
 				</nav>
-				<ul class="list header__nav-list">
-					<li class="item header__nav-item">
+				<ul class="list header__list">
+					<li class="item header__item">
 						<a href="mailto:info@devstudio.com" class="link header__contact">
 							<svg class="header__contact-icon" width="16" height="12">
 								<use href="./images/icons.svg#icon-envelope"></use>
@@ -37,7 +37,7 @@
 							info@devstudio.com
 						</a>
 					</li>
-					<li class="item header__nav-item">
+					<li class="item header__item">
 						<a href="tel:+380961111111" class="link header__contact">
 							<svg class="header__contact-icon" width="10" height="16">
 								<use href="./images/icons.svg#icon-smartphone"></use>
@@ -46,6 +46,54 @@
 						</a>
 					</li>
 				</ul>
+				<div class="mobile-menu">
+					<button class="mobile-menu__btn-open" data-menu-open type="button">
+						<svg class="mobile-menu__icon-menu" width="40" height="40">
+							<use href="./images/icons.svg#icon-menu_40px"></use>
+						</svg>
+					</button>
+					<div class="container mobile-menu__container is-hidden" data-menu>
+						<button class="mobile-menu__btn-close" data-menu-close type="button">
+							<svg class="mobile-menu__icon-close" width="40" height="40">
+								<use href="./images/icons.svg#icon-close_40px"></use>
+							</svg>
+						</button>
+						<ul class="list mobile-menu__list">
+							<li class="mobile-menu__item"><a class="mobile-menu__link" href="./index.html">Студія</a>
+							</li>
+							<li class="mobile-menu__item">
+							  <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html">Портфоліо</a>
+							</li>
+							<li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакти</a></li>
+						  </ul>
+						  <div class="mobile-menu__contacts-container">
+							<ul class="list mobile-menu__contacts">
+							  <li class="mobile-menu__contacts-item">
+								<a class="mobile-menu__contacts-link-phone link" href="tel:+380961111111">
+								  +38 096 111 11 11</a>
+							  </li>
+							  <li class="mobile-menu__contacts-item">
+								<a class="mobile-menu__contacts-link-mail link" href="mailto:info@devstudio.com">
+								  info@devstudio.com</a>
+							  </li>
+							</ul>
+							<ul class="list mobile-menu__socials">
+							  <li class="mobile-menu__socials-item">
+								<a href="#" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+							  </li>
+							  <li class="mobile-menu__socials-item">
+								<a href="#" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+							  </li>
+							  <li class="mobile-menu__socials-item">
+								<a href="#" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+							  </li>
+							  <li class="mobile-menu__socials-item">
+								<a href="#" class="mobile-menu__socials-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+							  </li>
+							</ul>
+						  </div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -73,7 +121,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/website-tech.jpg" alt="веб-сайт технокряк" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/website-tech-desktop.jpg 1x, ./images/portfolio/website-tech-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/website-tech-tablet.jpg 1x, ./images/portfolio/website-tech-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/website-tech-mobile.jpg 1x, ./images/portfolio/website-tech-mobile@2x.jpg 2x" src="./images/portfolio/website-tech-mobile.jpg" alt="веб-сайт технокряк" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -90,7 +144,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/poster-basketball.jpg" alt="баскетбольний постер" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/poster-basketball-desktop.jpg 1x, ./images/portfolio/poster-basketball-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/poster-basketball-tablet.jpg 1x, ./images/portfolio/poster-basketball-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/poster-basketball-mobile.jpg 1x, ./images/portfolio/poster-basketball-mobile@2x.jpg 2x" src="./images/portfolio/poster-basketball-mobile.jpg" alt="баскетбольний постер" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui sit quas, asperiores nulla quos
@@ -107,7 +167,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/restaurant-seafood.jpg" alt="додаток морського ресторану" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/restaurant-seafood-desktop.jpg 1x, ./images/portfolio/restaurant-seafood-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/restaurant-seafood-tablet.jpg 1x, ./images/portfolio/restaurant-seafood-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/restaurant-seafood-mobile.jpg 1x, ./images/portfolio/restaurant-seafood-mobile@2x.jpg 2x" src="./images/portfolio/restaurant-seafood-mobile.jpg" alt="додаток морського ресторану" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui sit quas, asperiores nulla quos
@@ -124,7 +190,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/project-prime.jpg" alt="проєкт прайм" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/project-prime-desktop.jpg 1x, ./images/portfolio/project-prime-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/project-prime-tablet.jpg 1x, ./images/portfolio/project-prime-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/project-prime-mobile.jpg 1x, ./images/portfolio/project-prime-mobile@2x.jpg 2x" src="./images/portfolio/project-prime-mobile.jpg" alt="проєкт прайм" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui sit quas, asperiores nulla quos
@@ -141,7 +213,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/project-boxes.jpg" alt="додаток коробок" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/project-box-desktop.jpg 1x, ./images/portfolio/project-box-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/project-box-tablet.jpg 1x, ./images/portfolio/project-box-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/project-box-mobile.jpg 1x, ./images/portfolio/project-box-mobile@2x.jpg 2x" src="./images/portfolio/project-box-mobile.jpg" alt="додаток коробок" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui sit quas, asperiores nulla quos
@@ -158,7 +236,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/website-inspiration.jpg" alt="веб-сайт вдохновение" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/website-inspiration-desktop.jpg 1x, ./images/portfolio/website-inspiration-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/website-inspiration-tablet.jpg 1x, ./images/portfolio/website-inspiration-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/website-inspiration-mobile.jpg 1x, ./images/portfolio/website-inspiration-mobile@2x.jpg 2x" src="./images/portfolio/website-inspiration-mobile.jpg" alt="веб-сайт натхнення" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui sit quas, asperiores nulla quos
@@ -175,7 +259,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/edition.jpg" alt="дизайн видання" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/edition-le-desktop.jpg 1x, ./images/portfolio/edition-le-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/edition-le-tablet.jpg 1x, ./images/portfolio/edition-le-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/edition-le-mobile.jpg 1x, ./images/portfolio/edition-le-mobile@2x.jpg 2x" src="./images/portfolio/edition-le-mobile.jpg" alt="дизайн Видання" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui sit quas, asperiores nulla quos
@@ -192,7 +282,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/project-lab.jpg" alt="проєкт лаб" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/project-lab-desktop.jpg 1x, ./images/portfolio/project-lab-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/project-lab-tablet.jpg 1x, ./images/portfolio/project-lab-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/project-lab-mobile.jpg 1x, ./images/portfolio/project-lab-mobile@2x.jpg 2x" src="./images/portfolio/project-lab-mobile.jpg" alt="проєкт Лаб" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui sit quas, asperiores nulla quos
@@ -209,7 +305,13 @@
 					<li class="portfolio__project-item">
 						<a class="link portfolio__project-link" href="#">
 							<div class="portfolio__project-thumb">
-								<img src="./images/growing-business.jpg" alt="додаток бізнесу" width="370" />
+								<picture>
+									<source srcset="./images/portfolio/growing-business-desktop.jpg 1x, ./images/portfolio/growing-business-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+									<source srcset="./images/portfolio/growing-business-tablet.jpg 1x, ./images/portfolio/growing-business-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    				
+									<img srcset="./images/portfolio/growing-business-mobile.jpg 1x, ./images/portfolio/growing-businessb-mobile@2x.jpg 2x" src="./images/portfolio/growing-business-mobile.jpg" alt="додаток бізнесу" />
+								</picture>
 								<div class="portfolio__description-project">
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui sit quas, asperiores nulla quos
@@ -257,7 +359,7 @@
 					<ul class="list footer__link-list">
 						<li class="team__link-item">
 							<a class="team__social-link footer__link" href="#">
-								<svg class="team__link-icon" width="20" height="20">
+								<svg class="team__link-icon width="20" height="20">
 									<use href="./images/icons.svg#icon-instagram"></use>
 								</svg>
 							</a>
@@ -299,5 +401,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

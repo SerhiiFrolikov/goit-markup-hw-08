@@ -10,15 +10,27 @@
     
     &__list {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
     
     &__link {
-        display: flex;
-        width: 170px;
         height: 92px;
+        flex-basis: calc((100% - 30px) / 2);
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+        
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
+
     }
     
     &__logo {

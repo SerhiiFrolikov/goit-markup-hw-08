@@ -1,15 +1,24 @@
 .benefits {
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__item {
-        width: 270px;
-        margin-right: 30px;
+        width: 100%;
 
-        &:last-child {
-            margin-right: 0;
+         @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
         }
     }
 
@@ -42,6 +51,12 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;;
+        }
+
+
 
         &--visually-hidden {
             position: absolute;
