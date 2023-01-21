@@ -16,6 +16,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transform: translateX(-100%);
 }
 
 .is-hidden .modal {
