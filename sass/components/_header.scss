@@ -145,8 +145,24 @@
     }
 
     &__burger {
-        @media (min-width: 768px){
-        display: none;
+        @extend .button;
+        display: flex;
+        align-items: center;
+    
+        margin-left: auto;
+        width: 40px;
+        height: 40px;
+        background-color: $primary-white-color;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    
+        @media screen and (min-width: 768px) {
+            display: none;
         }
     }
 }

@@ -311,6 +311,10 @@ body {
     color: $primary-text-color;
     background-color: $primary-white-color;
     font-family: Roboto, sans-serif;
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 
 h1,
